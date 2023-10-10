@@ -510,9 +510,22 @@ section .container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 1250px;
+ 
+
   gap: var(--gap);
 }
+@media only screen and (min-width: 992px) {
+  .gallery-images{height: 1600px;
+  }
+}
+
+
+
+
+
+
+
+
 .gallery-images picture {
   width: calc(calc(100% - var(--gap) * 2) / 3);
   position: relative;
